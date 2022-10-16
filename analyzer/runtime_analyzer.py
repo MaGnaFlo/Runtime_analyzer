@@ -6,9 +6,9 @@ from analyzer import Analyzer
 
 if __name__ == "__main__":
 
-	file = "tl.txt"
+	file = "mylog.tl"
 	analyzer = Analyzer(file)
 	analyzer.scan()
 	fig, ax = analyzer.plot()
-	#plt.show()
-	analyzer.save("hello")
+	plt.show()
+	analyzer.save("log_chart")
