@@ -1,0 +1,4 @@
+loop_wait1: 1.89035 sec
+loop_wait2: 5.20296 sec
+hello: 0.708948 sec
+total (main): 8.30297 sec
