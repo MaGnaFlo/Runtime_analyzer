@@ -1,0 +1,1 @@
+g++ -std=c++14 example.cpp -o example.exe
