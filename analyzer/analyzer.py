@@ -86,8 +86,10 @@ class Analyzer:
 			   colors=sub_colors)
 		texts[0].set_fontsize(11)
 
-		self.fig = fig
 		fig.tight_layout()
+		fig.canvas.manager.set_window_title("Runtime")
+		self.fig = fig
+		
 		return fig, ax
 
 	# save the pie chart. Arg is the name of the out png (ex: "myfig" (no extension))
