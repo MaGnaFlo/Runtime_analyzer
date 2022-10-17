@@ -94,10 +94,13 @@ class Analyzer:
 
 	# save the pie chart. Arg is the name of the out png (ex: "myfig" (no extension))
 	# and a specific path.
-	def save(self, figname, path="", dpi=300):
+	def save(self, figpath, dpi=300):
+		figpath = figpath.replace('\\', '/')
+		split_point = figpath.rfind('/')
+		path, figname = figpath[:split_point+1], figpath[split_point:]
 		if path != "" and path[-1] != '/' and path[-1] != '\\':
 			path += '/'
-		self.fig.savefig(path + figname + ".png", dpi=dpi)
+		self.fig.savefig(path + figname, dpi=dpi)
 		
 		if path=="":
 			path = "ROOT/"

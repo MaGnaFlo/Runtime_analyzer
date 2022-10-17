@@ -1,0 +1,5 @@
+GroupElementByTitleComplete: 0.032683 sec
+GetParamList: 29.8677 sec
+getCMDStateChartForElement: 0.271226 sec
+getSCXMLString: 0.336063 sec
+total [exportToScxml]: 30.5224 sec
