@@ -97,6 +97,7 @@ class Analyzer:
 	def save(self, figpath, dpi=300):
 		figpath = figpath.replace('\\', '/')
 		split_point = figpath.rfind('/')
+
 		path, figname = figpath[:split_point+1], figpath[split_point:]
 		if path != "" and path[-1] != '/' and path[-1] != '\\':
 			path += '/'
