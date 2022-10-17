@@ -6,7 +6,7 @@ from analyzer import Analyzer
 
 if __name__ == "__main__":
 
-	file = "mylog.tl"
+	file = "../data/mylog.tl"
 	analyzer = Analyzer(file)
 	analyzer.scan()
 	fig, ax = analyzer.plot()

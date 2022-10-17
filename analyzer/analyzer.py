@@ -79,12 +79,15 @@ class Analyzer:
 			   radius=1.2)
 
 		# subfuncs
-		ax[1].pie(sub_values, 
+		_, texts, _ = ax[1].pie(sub_values, 
 			   labels=sub_labels,
 			   autopct=lambda pct: text_plot(pct, sub_values),
 			   radius=1.2,
 			   colors=sub_colors)
+		texts[0].set_fontsize(11)
+
 		self.fig = fig
+		fig.tight_layout()
 		return fig, ax
 
 	# save the pie chart. Arg is the name of the out png (ex: "myfig" (no extension))
