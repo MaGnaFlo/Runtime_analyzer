@@ -1,4 +1,4 @@
-# Runtime_analyzer
+# C++ Runtime Analyzer
 Set of methods in python and C++ to analyze a C++ code runtime
 
 ## Overview
