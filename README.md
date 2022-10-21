@@ -7,12 +7,12 @@ runtime data.
 
 ## Requirements
 Basic setup:
--Tested on Windows
--Python 3
--C++14
+- Tested on Windows
+- Python 3
+- C++14
 
 Additional requirements (python):
--Numpy
--Matplotlib
+- Numpy
+- Matplotlib
 
 ## Usage
