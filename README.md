@@ -56,6 +56,7 @@ int main
 ```
 The previous snippet demonstrates how to log several sub-functions within a part of the code (which can be a larger method).
 You can also time-log different functions at various parts of the code, but you'll have to use other log files.
+**You must always specify the full runtime log by writing "total [name_of_the_total_part]" in the TimeLog::TL writer.**
 
 ### Analyze and report the runtime
 The analysis is performed with a python script. You can simply call the runtime_analyzer method from analyzer.py:
