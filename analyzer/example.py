@@ -11,7 +11,7 @@ if __name__ == "__main__":
 	parser.add_argument("-g", "--graphname", type=str, default="log_plot.png", help="name of the graph plot")
 	parser.add_argument("-d", "--display", type=str, default="no", help="(yes/no) display the output")
 	args = parser.parse_args()
-	print(args.graphname)
+
 	if args.display:
 		import matplotlib.pyplot as plt
 
