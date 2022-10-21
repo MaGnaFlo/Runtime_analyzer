@@ -1,6 +1,21 @@
 import numpy as np 
 import matplotlib.pyplot as plt 
 
+''' General function to use the analyzer class
+	filename: full path to the log file
+	graphname: name of the output figure
+	plot (boolean): allows to plot the output directly prior to saving
+'''
+def runtime_analyzer(filename, graphname, plot):
+
+	analyzer = Analyzer(filename)
+	analyzer.scan()
+	fig, ax = analyzer.plot()
+	if plot=="yes":
+		plt.show()
+	analyzer.save(graphname)
+
+
 '''
 Class for analyzing the time spent by a function of part of a program
 and subdivide its parts in a pie chart. The analyzes takes a core file into

@@ -1,15 +1,6 @@
 
-from analyzer import Analyzer
+from analyzer import runtime_analyzer
 import argparse
-
-def runtime_analyzer(filename, graphname, plot):
-
-	analyzer = Analyzer(filename)
-	analyzer.scan()
-	fig, ax = analyzer.plot()
-	if plot=="yes":
-		plt.show()
-	analyzer.save(graphname)
 
 
 if __name__ == "__main__":
